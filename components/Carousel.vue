@@ -54,7 +54,8 @@ export default {
         },
         {
           title: 'Slide 7',
-          image: 'http://www.movienewsletters.net/photos/121687R1.jpg',
+          image:
+            'https://m.media-amazon.com/images/M/MV5BZmFjMTYwODAtMTUzZi00NWUzLWIzMjUtYTNiZTE2MzNlMjNiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
         },
         {
           title: 'Slide 8',
