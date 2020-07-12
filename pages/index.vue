@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div class="container flex flex-col min-h-screen">
     <Navbar />
-    <section class="my-32">
+    <section class="my-32 flex-1">
       <template v-if="$route.name === 'index'">
         <Carousel />
       </template>
