@@ -9,21 +9,11 @@
       </b-navbar-item>
     </template>
     <template slot="end">
-      <b-navbar-item href="#">
-        FILM
-      </b-navbar-item>
-      <b-navbar-item href="#">
-        PEOPLE
-      </b-navbar-item>
-      <b-navbar-item href="#">
-        LOCATION
-      </b-navbar-item>
-      <b-navbar-item href="#">
-        SPECIES
-      </b-navbar-item>
-      <b-navbar-item href="#">
-        VEHICLE
-      </b-navbar-item>
+      <nuxt-link class="navbar-item" to="/Film">FILM</nuxt-link>
+      <nuxt-link class="navbar-item" to="/People">PEOPLE</nuxt-link>
+      <nuxt-link class="navbar-item" to="/Location">LOCATION</nuxt-link>
+      <nuxt-link class="navbar-item" to="/Species">SPECIES</nuxt-link>
+      <nuxt-link class="navbar-item" to="/Vehicle">VEHICLE</nuxt-link>
     </template>
   </b-navbar>
 </template>
@@ -32,9 +22,14 @@
 a.navbar-item {
   letter-spacing: 2px;
   img {
-    max-height: 70px;
+    max-height: 50px;
   }
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-within {
+    color: darkgray;
+  }
+  &.nuxt-link-exact-active {
     color: darkgray;
   }
 }
